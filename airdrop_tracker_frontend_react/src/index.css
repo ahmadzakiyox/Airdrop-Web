@@ -1,0 +1,50 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Global Reset and Body Styling */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Mencegah scroll horizontal yang tidak diinginkan */
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #0d0d0d; /* Warna dasar sangat gelap */
+  color: #e0e0e0; /* Warna teks default */
+  /* Tambahkan sedikit tekstur noise */
+  background-image: url('data:image/svg+xml,%3Csvg width="6" height="6" viewBox="0 0 6 6" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="%239C92AC" fill-opacity="0.1" fill-rule="evenodd"%3E%3Cpath d="M0 0h3v1H0V0zm0 2h3v1H0V2zm0 4h3v1H0V4zm3 0h3v1H3V4zm3 2h3v1H3V4zm3 2h3v1H3V4zM3 0h3v1H3V0zm3 0h3v1H3V0zm3 0h3v1H3V0zM3 2h3v1H3V2zm3 2h3v1H3V2zm3 2h3v1H3V2z"/%3E%3C/g%3E%3C/svg%3E');
+  background-attachment: fixed;
+  background-size: 6px 6px; /* Sesuaikan ukuran noise */
+}
+
+/* Scrollbar Styling (untuk kesan futuristik) */
+::-webkit-scrollbar {
+  width: 8px; /* Lebar scrollbar vertikal */
+  height: 8px; /* Tinggi scrollbar horizontal */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Latar belakang track scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #555; /* Warna thumb scrollbar */
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Warna thumb saat hover */
+}
+
+/* Basic link styling to ensure visibility in dark theme */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
